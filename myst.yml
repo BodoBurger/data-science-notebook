@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: bf95fd40-b294-4a76-a9b9-345b5086dc04
+  # title:
+  # description:
+  # keywords: []
+  # authors: []
+  github: https://github.com/BodoBurger/notebooks
+  # To autogenerate a Table of Contents, run "myst init --write-toc"
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
