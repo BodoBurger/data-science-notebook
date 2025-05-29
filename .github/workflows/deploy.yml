@@ -5,7 +5,10 @@ name: MyST GitHub Pages Deploy
 on:
   push:
     # Runs on pushes targeting the default branch
-    branches: [main]
+    branches:
+      - main
+    paths:
+      - "my_notebooks/**"
 env:
   # `BASE_URL` determines, relative to the root of the domain, the URL that your site is served from.
   # E.g., if your site lives at `https://mydomain.org/myproject`, set `BASE_URL=/myproject`.
@@ -38,11 +41,12 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
       - name: Build HTML Assets
+        working-directory: ./my_notebooks
         run: myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_build/html'
+          path: './my_notebooks/_build/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
