@@ -7,8 +7,12 @@ parts:
   - caption: Pandas
     chapters:
     - file: pandas/2020_04_selecting_slicing_data
+  - caption: Polars
+    chapters:
+    - file: polars/selecting_data
+    - file: polars/namespace_registration
   - caption: Template files
     chapters:
-    - file: markdown
-    - file: notebooks
-    - file: markdown-notebooks
+    - file: template/markdown
+    - file: template/notebooks
+    - file: template/markdown-notebooks
