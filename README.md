@@ -32,6 +32,19 @@ https://github.com/executablebooks/cookiecutter-jupyter-book
 Activate Github Pages under the repo settings. Set the source for build and deployment to `GitHub Actions`.
 
 
+## Jupyter Book configuration
+
+### Prevent execution of notebooks
+
+In the `execute:` section of the `_config.yml` file set:
+
+```yml
+execute:
+  execute_notebooks: "off"
+```
+
+See more options at https://jupyterbook.org/en/stable/content/execute.html.
+
 
 ## Usage
 

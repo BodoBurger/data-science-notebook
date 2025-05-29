@@ -3,7 +3,12 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Pandas
+    chapters:
+    - file: pandas/2020_04_selecting_slicing_data
+  - caption: Template files
+    chapters:
+    - file: markdown
+    - file: notebooks
+    - file: markdown-notebooks
