@@ -2,6 +2,37 @@
 
 A collection of Jupyter notebooks.
 
+
+## Setup
+
+### Tools
+
+- Jupyter Book: https://jupyterbook.org
+- 
+
+### Mamba environment
+
+Create an environment to build the book locally:
+
+```bash
+mamba create -n jupyterbook cookiecutter jupyter-book
+```
+
+### Create empty project using cookiecutter
+
+```bash
+jupyter-book create --cookiecutter notebooks/
+```
+
+https://github.com/executablebooks/cookiecutter-jupyter-book
+
+
+### Github Pages
+
+Activate Github Pages under the repo settings. Set the source for build and deployment to `GitHub Actions`.
+
+
+
 ## Usage
 
 ### Building the book
