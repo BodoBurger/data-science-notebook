@@ -46,6 +46,12 @@ Activate Github Pages under the repo settings. Set the source for build and depl
 
 ## MyST configuration
 
+### ToDos
+
+- [ ] [Customize logos and favicons](https://mystmd.org/guide/website-templates#site-options)
+- [ ] Make header similar to main github.io page and use same color theme
+- [ ] [Install jupyter-myst](https://mystmd.org/guide/quickstart-jupyter-lab-myst)
+
 ### Prevent execution of notebooks
 
 At the moment, execution of notebooks is disabled by default.
