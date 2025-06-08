@@ -13,7 +13,7 @@ project:
   #      - id: mrc
   #        institution: Mücke Roth & Company
   #        url: https://www.muecke-roth.de
-  github: https://github.com/BodoBurger/notebooks
+  github: https://github.com/BodoBurger/data-science-notebook
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
