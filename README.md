@@ -1,8 +1,6 @@
-# My notebooks
+# The Data Science Notebook
 
-A collection of Jupyter notebooks.
-
-Website version: https://bodoburger.github.io/notebooks/
+**https://bodoburger.github.io/data-science-notebook**
 
 
 ## Setup
