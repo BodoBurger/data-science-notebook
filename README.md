@@ -1,6 +1,4 @@
-# The Data Science Notebook
-
-**https://bodoburger.github.io/data-science-notebook**
+# [The Data Science Notebook](https://bodoburger.github.io/data-science-notebook)
 
 
 ## Setup
