@@ -2,12 +2,12 @@
 version: 1
 project:
   id: bf95fd40-b294-4a76-a9b9-345b5086dc04
-  title: Notebooks
-  # description:
+  title: The Data Science Notebook
+  description: Notes on all topics related to data science.
   # keywords: []
-  #authors:
-  #  - name: Bodo Burger
-  #    url: https://bodoburger.github.io
+  authors:
+    - name: Bodo Burger
+      url: https://bodoburger.github.io
   #    linkedin: https://www.linkedin.com/in/bodo-burger/
   #    affiliations:
   #      - id: mrc
