@@ -1,4 +1,6 @@
+# Cache files
+cache/
+.ipynb_checkpoints/
+
 # MyST build outputs
 _build
-
-cache/
