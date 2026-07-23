@@ -12,30 +12,12 @@
 
 ## Installation
 
-- [Installing Miniconda](https://docs.anaconda.com/miniconda/install/)
-- [Installing Anaconda](https://docs.anaconda.com/anaconda/install/linux/)
-- [Uninstall](https://docs.anaconda.com/anaconda/uninstall/)
-
-
 ### Miniforge
 
 https://conda-forge.org/download/
 
 ```bash
 bash Miniforge3-Linux-x86_64.sh
-```
-
-### Miniconda
-
-```bash
-# Download
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-
-# Installation
-bash ~/Miniconda3-latest-Linux-x86_64.sh
-
-# Activate
-source ~/.bashrc
 ```
 
 ### Should you add Conda to the PATH?
@@ -51,6 +33,19 @@ source ~/.bashrc
 conda config --set auto_activate_base false
 ```
 
+### Create default environments
+
+#### Jupyter Lab environment
+
+```bash
+conda create -n jupyter nb_conda_kernels jupyterlab jupyterlab-git ipywidgets
+```
+
+#### Default data science environment
+
+```bash
+conda create -n default pandas polars matplotlib scikit-learn geopandas scipy ipykernel openpyxl fastexcel
+```
 
 ### Want to change kernel in jupyter?
 
