@@ -1,26 +1,19 @@
-# See docs at: https://mystmd.org/guide/frontmatter
+# See project settings at: https://mystmd.org/guide/settings
+# See frontmatter options at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: bf95fd40-b294-4a76-a9b9-345b5086dc04
-  title: The Data Science Notebook
-  description: Notes on all topics related to data science.
+  title: Data Science Notebook
+  description: Notes on topics related to data science.
   # keywords: []
-  authors:
-    - name: Bodo Burger
-      url: https://bodoburger.github.io
-  #    linkedin: https://www.linkedin.com/in/bodo-burger/
-  #    affiliations:
-  #      - id: mrc
-  #        institution: Mücke Roth & Company
-  #        url: https://www.muecke-roth.de
   github: https://github.com/BodoBurger/data-science-notebook
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
   options:
     folders: true
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
-  nav:
-    - title: ⮪ bodoburger.github.io
-      url: https://bodoburger.github.io/
+    hide_authors: true
+    logo: site_logo.png
+    logo_alt: Data Science Notebook
+  #nav:
+  #  - title: ⮪ bodoburger.github.io
+  #    url: https://bodoburger.github.io/
