@@ -1,6 +1,5 @@
 ---
 title: Overview
-author: False
 site:
   options:
     hide_toc: true
@@ -15,10 +14,11 @@ Having these notes has sometimes saved me time in the past.
 Whether I'll still need them now that LLMs have emerged and are widely available for quick questions and answers remains to be seen.
 
 
-## Table of contents
+## Full table of contents
 
-```{toc}
-```
+:::{toc}
+:context: project
+:::
 
 
 ## What is MyST?
