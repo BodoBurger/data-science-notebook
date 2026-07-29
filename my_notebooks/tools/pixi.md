@@ -75,7 +75,14 @@ pixi init my_new_project
 ```bash
 pixi add polars pytest
 
-pixi add --pypi geopy # add package from PyPI instead of conda-forge
+# add package from PyPI instead of conda-forge:
+pixi add --pypi geopy 
+
+# add local editable package as pypi dependency:
+pixi add --pypi "project @ file:///absolute/path/to/project" --editable
+
+# add package from github as pypi dependency:
+pixi add --git https://github.com/username/my_package.git my_package --pypi
 ```
 
 ### Update workspace environment
