@@ -2,7 +2,7 @@
 # Core page metadata
 title: Pixi 
 description: uv is a Python package and project manager.
-date: 2026-07-28"
+date: 2026-07-28
 tags:
   - python
 keywords:
@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-[uv](https://docs.astral.sh/uv/) is a modern Python package management tool, replacing / improving on `conda` and `mamba`.
+[Pixi](https://pixi.prefix.dev) is a modern Python package management tool, replacing / improving on `conda` and `mamba`.
 
 ## Installation, Update and Uninstall
 
@@ -42,6 +42,22 @@ rm -r ~/.pixi
 ...
 ```
 
+## Setup
+
+### Global environments
+
+```bash
+pixi global install \ 
+    --environment data-science \ 
+    --expose ds-python=python \
+    polars pandas matplotlib scikit-learn geopandas scipy openpyxl fastexcel ipykernel ipywidgets tqdm
+```
+
+### Jupyter Lab
+
+Detailed instructions how to setup a global JupyterLab installation: https://github.com/BodoBurger/pixi-jupyter/blob/main/README.md
+
+
 ## Workspaces
 
 Workspaces enable reproducible environments inside a folder (e.g. root of a Git repository).
@@ -62,15 +78,28 @@ pixi add polars pytest
 pixi add --pypi geopy # add package from PyPI instead of conda-forge
 ```
 
-## Environments
+### Update workspace environment
 
-...
+```bash
+pixi update --dry-run # preview
 
-## Working with Jupyter Lab
+pixi update
+```
 
-...
+### `pixi.lock`
+
+Commit and track `pixi.lock` if you want reproduce the exact environment.
+
+Rebuild environment from lockfile:
+
+```bash
+pixi clean # removes workspace environment under .pixi
+pixi install --locked # recreates environment from lockfile
+```
+
 
 ## Resources
 
 - [Pixi documentation](https://pixi.prefix.dev/)
+  - [uv vs. Pixi](https://pixi.prefix.dev/latest/switching_from/uv/#quick-look-at-the-differences)
 - [Insightful blog post: Python package managers: uv vs pixi?](https://jacobtomlinson.dev/posts/2025/python-package-managers-uv-vs-pixi/)
