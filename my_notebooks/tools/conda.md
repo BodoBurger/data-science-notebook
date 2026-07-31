@@ -1,13 +1,11 @@
-# Conda
+---
+title: Conda & Mamba
+---
 
-[Conda](https://conda.io) is a package manager and environment management system.
+Conda / Mamba (C++ reimplementation of Conda) is a package manager and environment management system. Can be replaced by [Pixi](./pixi.md).
 
-## Resources
-
-- [Conda docs](https://conda.io/projects/conda)
-- [Conda cheat sheet](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
-- [Conda: Myths and Misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)
-- [Conda forge (an alternative distribution for conda)](https://conda-forge.org/)
+- CLI interface docs: [mamba docs](https://mamba.readthedocs.io)
+- Packages: [conda-forge docs](https://conda-forge.org/docs/user)
 
 
 ## Installation
@@ -16,20 +14,14 @@
 
 https://conda-forge.org/download/
 
-```bash
+```{code} bash
 bash Miniforge3-Linux-x86_64.sh
 ```
 
-### Should you add Conda to the PATH?
-
-- [Conda FAQ](https://docs.anaconda.com/working-with-conda/reference/faq/)
-
-
 #### Prevent conda from activating the base env by default
 
-- [Stackoverflow Thread](https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default)
-
-```bash
+```{code} bash
+:caption: [Stackoverflow Thread](https://stackoverflow.com/questions/54429210/how-do-i-prevent-conda-from-activating-the-base-environment-by-default)
 conda config --set auto_activate_base false
 ```
 
@@ -44,8 +36,13 @@ conda create -n jupyter nb_conda_kernels jupyterlab jupyterlab-git ipywidgets
 #### Default data science environment
 
 ```bash
-conda create -n default pandas polars matplotlib scikit-learn geopandas scipy ipykernel openpyxl fastexcel
+conda create -n default \
+pandas polars geopandas statsmodels \
+scikit-learn lightgbm xgboost catboost \
+matplotlib seaborn plotly streamlit \
+pydantic openpyxl fastexcel ipykernel
 ```
+
 
 ### Want to change kernel in jupyter?
 
@@ -163,7 +160,7 @@ conda install ipykernel # for kernel selection in jupyter
 # conda install matplotlib PyYAML opencv-python pydot pillow cython
 ```
 
-### Check tensorflow gpu
+#### Check tensorflow gpu
 
 ```python
 import tensorflow as tf
@@ -174,3 +171,9 @@ tf.test.is_gpu_available(
 ```
 
 - [Install TensorFlow with GPU Support the Easy Way](https://www.pugetsystems.com/labs/hpc/Install-TensorFlow-with-GPU-Support-the-Easy-Way-on-Ubuntu-18-04-without-installing-CUDA-1170/)
+
+
+### Resources
+
+- [Conda cheat sheet](https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html)
+- [Conda: Myths and Misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/)

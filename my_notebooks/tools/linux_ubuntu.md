@@ -1,4 +1,4 @@
-# Ubuntu 
+# Linux Ubuntu 
 
 ## Steps after fresh install
 

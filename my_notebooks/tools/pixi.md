@@ -1,5 +1,4 @@
 ---
-# Core page metadata
 title: Pixi 
 description: uv is a Python package and project manager.
 date: 2026-07-28
@@ -50,8 +49,12 @@ rm -r ~/.pixi
 pixi global install \ 
     --environment data-science \ 
     --expose ds-python=python \
-    polars pandas matplotlib scikit-learn geopandas scipy openpyxl fastexcel ipykernel ipywidgets tqdm
+    pandas polars geopandas statsmodels \
+    scikit-learn lightgbm xgboost catboost \
+    matplotlib seaborn plotly streamlit \
+    pydantic openpyxl fastexcel ipykernel ipywidgets tqdm
 ```
+
 
 ### Jupyter Lab
 

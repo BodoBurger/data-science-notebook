@@ -16,6 +16,18 @@ in the HOME directory (`~/.gitconfig`),
 repository-specific settings are found at `.git/config`
 in the respective repository folder.
 
+### Hide email when pushing to public repositories
+
+:::{caution}
+The configured email get's published when you push to a public repository. GitHub and GitLab allow you to set email aliases in the settings.
+:::
+
+- GitHub:
+  - Go to https://github.com/settings/emails, activate `Keep my email addresses private`.
+  - Configure your Git email like above. The address looks something like `123456+username@users.noreply.github.com`.
+- GitLab:
+  - Go to https://gitlab.com/-/user_settings/profile, set `Commit email` to `Use private email - 123456-username@users.noreply.gitlab.com`.
+
 
 ## Branches
 
